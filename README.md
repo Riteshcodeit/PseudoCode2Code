@@ -221,3 +221,11 @@ copies or substantial portions of the Software.
 - 🛠 [Live Demo](https://your-live-demo-link.com)
 - 🧑‍💻 [Contribute](https://github.com/your-username/pseudocode2code/blob/main/CONTRIBUTING.md)
 - ⭐ [Star This Project](https://github.com/your-username/pseudocode2code)
+
+
+#### 📦 Future Roadmap
+ 🔺Export converted code as .zip or .txt
+
+ 🔺Auth (save history, settings)
+
+ 🔺VS Code Extension
