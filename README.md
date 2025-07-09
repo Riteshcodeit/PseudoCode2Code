@@ -1,5 +1,8 @@
 # ⚙️ PseudoCode2Code
 
+
+
+
 Convert your pseudocode into real, executable code — effortlessly.  
 Supports multiple programming languages, optional AI-powered translation, and live code execution using the Judge0 API.
 
@@ -92,10 +95,11 @@ Save code or pseudocode for future use (Pro version – coming soon!).
 
 | Layer | Tech |
 |-------|------|
-| Frontend | React.js, TailwindCSS, React Router |
-| Backend | Node.js or Flask |
+| Frontend | React.js, TailwindCSS, React Router, Clerk |
+| Backend | Node.js  |
 | Execution API | [Judge0](https://judge0.com) |
-| Optional AI | OpenAI GPT-4 / GPT-3.5 |
+| LLM Model |GeminiAPI  (gemini-2.0-flash)  (Currently)|
+| Optional AI | OpenAI GPT-4 / GPT-3.5  (soon)|
 | Hosting (planned) | Vercel (frontend), Render (backend) |
 
 ---
@@ -103,5 +107,84 @@ Save code or pseudocode for future use (Pro version – coming soon!).
 ### ⚙️ Pseudocode Syntax Guide
 
 Use clean, consistent structures with keywords like:
+
+
+#### ✅ Supported Keywords:
+- `START`, `END`
+- `INPUT`, `OUTPUT`, `PRINT`
+- `SET`, `=`, `+`, `-`, etc.
+- `IF`, `ELSE`, `ENDIF`
+- `FOR`, `WHILE`, `LOOP`, `BREAK`
+
+#### ❌ Unsupported (for now):
+- Non-standard math symbols
+- GOTO-style logic
+- Complex nested structures without indentation
+
+> Tip: Use **indentation and clear structure** for best results, especially without AI assist.
+
+---
+
+### 📥 Judge0 API Integration
+
+- Converts code into Base64
+- Sends it to Judge0 via `POST /submissions`
+- Polls submission result via `GET /submissions/{token}`
+- Displays:
+  - ✅ Standard Output (green)
+  - ❌ Errors (red)
+  - ⏱ Execution Time
+
+---
+
+### 📁 Project Structure
+
+```
+pseudocode2code/
+│
+├── frontend/        # React App
+│   ├── App.jsx
+│   ├── components/
+│   └── ...
+│
+├── backend/         # Node.js 
+│   ├── index.js 
+│   
+└── README.md
+```
+
+
+---
+
+### 🛠 Setup Instructions
+
+#### Frontend:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+#### Backend:
+```
+cd backend
+npm install   
+npm run start
+```
+
+
+#### 💻 Supported Languages
+Languages tested with conversion + execution:
+
+ Python
+
+ JavaScript
+
+ C++
+
+ Java
+
+ Rust
+
+ Go
 
 
