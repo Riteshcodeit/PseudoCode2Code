@@ -1,7 +1,7 @@
 # ⚙️ PseudoCode2Code
 
 
-
+<img width="1342" height="455" alt="Image" src="https://github.com/user-attachments/assets/a79259ef-8b8a-4602-a8a2-2276fa5d0ac7" />
 
 Convert your pseudocode into real, executable code — effortlessly.  
 Supports multiple programming languages, optional AI-powered translation, and live code execution using the Judge0 API.
@@ -56,6 +56,8 @@ Save code or pseudocode for future use (Pro version – coming soon!).
 ## 📚 Documentation
 
 > This section provides a technical overview of PseudoCode2Code’s architecture, features, and developer setup.
+
+![Screenshot 2025-07-09 165955](https://github.com/user-attachments/assets/9c54fb0f-f5a0-4918-ba06-86dcc8389514)
 
 ---
 
@@ -187,4 +189,35 @@ Languages tested with conversion + execution:
 
  Go
 
+![Screenshot 2025-07-09 170029](https://github.com/user-attachments/assets/27ff6a1f-67f6-4910-805e-c5c82ba039c7)
 
+
+---
+
+## 📃 License
+
+This project is licensed under the **MIT License**.
+
+> Permission is hereby granted, free of charge, to any person obtaining a copy  
+> of this software and associated documentation files (the "Software"), to deal  
+> in the Software without restriction, including without limitation the rights  
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+> copies of the Software, and to permit persons to whom the Software is  
+> furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability.
+
+---
+
+## 🔗 Quick Access
+
+- 🚀 [How to Use](#-how-to-use)
+- 📚 [Documentation](#-documentation)
+- 🧪 [Judge0 API](https://docs.judge0.com)
+- 🤖 [Gemini API (Google AI)](https://ai.google.dev/)
+- 🛠 [Live Demo](https://your-live-demo-link.com)
+- 🧑‍💻 [Contribute](https://github.com/your-username/pseudocode2code/blob/main/CONTRIBUTING.md)
+- ⭐ [Star This Project](https://github.com/your-username/pseudocode2code)
