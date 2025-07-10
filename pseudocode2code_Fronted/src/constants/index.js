@@ -47,7 +47,7 @@ export const navigation = [
   {
     id: "0",
     title: "Documentation",
-    url: "#features",
+    url: "https://github.com/Riteshcodeit/pseudocode2code#-documentation",
   },
   {
     id: "1",
@@ -57,7 +57,7 @@ export const navigation = [
   {
     id: "2",
     title: "How to use",
-    url: "#how-to-use",
+    url: "https://github.com/Riteshcodeit/pseudocode2code#-how-to-use",
   },
   {
     id: "4",

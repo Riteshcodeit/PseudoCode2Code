@@ -66,6 +66,8 @@ const Header = () => {
               <a
                 key={item.id}
                 href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
@@ -93,12 +95,6 @@ const Header = () => {
               <Button className="hidden lg:flex" >Sign in</Button>
             </SignInButton>
           </SignedOut>   
-
-          <UserButton userProfileMode="modal" appearance={{
-            elements:{
-              userButtonAvatarBox:"w-9 h-9 m-3 border border-purple-500"
-            }
-          } }/>      
            <SignedIn>
             <SignOutButton>
               <Button className="hidden lg:flex" >Sign Out</Button>
