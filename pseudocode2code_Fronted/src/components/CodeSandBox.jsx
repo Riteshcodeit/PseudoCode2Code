@@ -338,7 +338,7 @@ const CodeSandBox = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/convert", {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/convert`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pseudocode, language }),
@@ -403,7 +403,7 @@ const CodeSandBox = () => {
     setShowOutputBox(false);
 
     try {
-      const res = await axios.post("http://localhost:3000/run", {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/run`, {
         code: finalCode,
         language,
         stdin: input,
