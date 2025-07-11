@@ -3,10 +3,16 @@ import "dotenv/config";
 import express from "express";
 import axios from "axios";
 import cors from "cors";
+import rateLimit from "express-rate-limit"
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const limiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 10, // max 10 requests per IP per minute
+});
 
 // The client gets the API key from the environment variable `GEMINI_API_KEY`.
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
@@ -163,9 +169,9 @@ async function fetchData1(tokenId) {
   }
 }
 
-// fetchData();
 
-app.post("/run", async(req, res) => {
+
+app.post("/run",limiter, async(req, res) => {
   const { code, language,stdin = "" } = req.body;
 
   const encodedCode = Buffer.from(code).toString("base64");
@@ -188,7 +194,7 @@ app.post("/run", async(req, res) => {
       },
       params:{
         base64_encoded:true,
-        wait:false,
+        wait:true,
         fields:"*",
       }
     }) 
