@@ -9,7 +9,7 @@ import rateLimit from "express-rate-limit"
 
 
 const corsOptions = {
-  origin: 'https://pseudocode2code.netlify.app',
+  origin: 'https://pseudocode2code.netlify.app/',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
 };
