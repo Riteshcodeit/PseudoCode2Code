@@ -218,7 +218,7 @@ copies or substantial portions of the Software.
 - 📚 [Documentation](#-documentation)
 - 🧪 [Judge0 API](https://docs.judge0.com)
 - 🤖 [Gemini API (Google AI)](https://ai.google.dev/)
-- 🛠 [Live Demo]
+- 🛠 [Live Demo](https://pseudocode2code.netlify.app/)
 - 🧑‍💻 [Contribute](https://github.com/your-username/pseudocode2code/blob/main/CONTRIBUTING.md)
 - ⭐ [Star This Project](https://github.com/your-username/pseudocode2code)
 
