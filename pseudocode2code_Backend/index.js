@@ -17,6 +17,8 @@ const app = express();
 app.use(cors(corsOptions));
 app.use(express.json());
 
+app.options('/convert', cors(corsOptions));
+app.options('/run', cors(corsOptions));
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute
   max: 10, // max 10 requests per IP per minute
