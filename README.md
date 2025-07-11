@@ -102,7 +102,7 @@ Save code or pseudocode for future use (Pro version – coming soon!).
 | Execution API | [Judge0](https://judge0.com) |
 | LLM Model |GeminiAPI  (gemini-2.0-flash)  (Currently)|
 | Optional AI | OpenAI GPT-4 / GPT-3.5  (soon)|
-| Hosting (planned) | Vercel (frontend), Render (backend) |
+| Hosting (planned) | Netlify (frontend), Render (backend) |
 
 ---
 
