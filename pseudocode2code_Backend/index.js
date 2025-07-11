@@ -4,7 +4,7 @@ import express from "express";
 import axios from "axios";
 import cors from "cors";
 import rateLimit from "express-rate-limit"
-import cors from "cors"
+
 
 
 
