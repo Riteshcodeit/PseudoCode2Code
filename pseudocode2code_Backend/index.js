@@ -4,15 +4,26 @@ import express from "express";
 import axios from "axios";
 import cors from "cors";
 import rateLimit from "express-rate-limit"
+import cors from "cors"
 
+
+
+const corsOptions = {
+  origin: 'https://pseudocode2code.netlify.app',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+};
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 minute
   max: 10, // max 10 requests per IP per minute
 });
+
+
+
 
 // The client gets the API key from the environment variable `GEMINI_API_KEY`.
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
@@ -230,7 +241,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to Server ");
 });
 
-app.post("/convert", async (req, res) => {
+app.post("/convert",cors(corsOptions), async (req, res) => {
   const { pseudocode, language } = req.body;
   const getPrompt = (language, pseudocode) => {
     const lang = language.toLowerCase();
